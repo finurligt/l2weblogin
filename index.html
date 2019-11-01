@@ -16,13 +16,35 @@
           <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
         <form class="login-form">
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
-          <button>login</button>
+          <input type="text" placeholder="username" id="username"/>
+          <input type="password" placeholder="password" id="password"/>
+          <button onclick="login()">login</button>
           <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>
       </div>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDtp3GsxyteVF0tzOfE_sG_x_SU2_dPxhU",
+        authDomain: "l2weblogin.firebaseapp.com",
+        databaseURL: "https://l2weblogin.firebaseio.com",
+        projectId: "l2weblogin",
+        storageBucket: "l2weblogin.appspot.com",
+        messagingSenderId: "79601294001",
+        appId: "1:79601294001:web:bbde1819003566034b6090"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
